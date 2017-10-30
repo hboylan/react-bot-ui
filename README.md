@@ -14,3 +14,51 @@ React component for customizable chatbot UI with Dialogflow integration
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
+
+## Demo
+
+Check out the live [demo](https://hboylan.github.io/react-bot-ui).
+
+Take a look at the demo source [code](https://github.com/hboylan/react-bot-ui/blob/master/demo/src/index.js).
+
+## Installation
+
+#### NPM:
+```
+npm i --save react-bot-ui
+```
+
+#### Yarn:
+```
+yarn add react-bot-ui
+```
+
+## Features
+
+- React component
+- Override default CSS variables
+- Integrate with [Dialogflow](https://dialogflow.com)
+- Toggle chat window open/close
+- Embed within existing page
+
+## Usage
+
+#### Minimum Dialogflow integration
+```jsp
+<ReactBotUI
+	dialogflow={{accessToken: 'youshallnotpass'}} />
+```
+
+#### All optional property defaults
+```jsp
+<ReactBotUI
+	dialogflow={null}
+	dialogHeightMax={calculatedToFlex}
+	isUserHidden={false}
+	isVisible={true}
+	title={'React Bot UI'} />
+```
+
+## Styling
+
+Default styling can be overriden using CSS variables found [here](https://github.com/hboylan/react-bot-ui/blob/5755d53/css/main.css#L11)
