@@ -1,0 +1,193 @@
+/*
+ * Chat UI reference
+ * https://codepen.io/reimersjan/pen/zpuws?editors=1100
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,900);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+:root {
+  --primary-color: black;
+  --secondary-color: gray;
+
+  --border-radius: 10px;
+  --icon-size: 50px;
+  --font-color: white;
+  --font-family: 'Roboto';
+  --font-size: 1em;
+  --font-weight: 300;
+
+  --container-bg: white;
+  --container-right: 0;
+  --container-width: 100%;
+
+  --message-margin-lg: 60px;
+  --message-margin-sm: 40px;
+  --message-margin-y: 5px;
+  --message-padding: 10px;
+
+  --img-user: url(http://www.libertyspecialtymarkets.com/wp-content/uploads/2017/01/profile-default.jpg);
+  --img-bot: url(https://image.flaticon.com/icons/svg/270/270137.svg);
+}
+.container * {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  bottom: 0;
+  position: absolute;
+  right: var(--container-right);
+  width: var(--container-width);
+}
+.container header {
+  background: var(--primary-color);
+  cursor: pointer;
+  height: 45px;
+  padding: 5px 10px;
+}
+.container header h1, #demo div h1 {
+  color: var(--font-color);
+  margin: 5px;
+  font-family: var(--font-family);
+  font-size: 1.3em;
+  font-weight: var(--font-weight);
+}
+.container div {
+  /* transition: all 0.75s ease-in-out; */
+}
+.messages-wrapper {
+  background: var(--container-bg);
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.messages {
+  width: 100%;
+  padding: 0px 10px;
+  overflow-y: auto;
+}
+.img-user {
+  content: var(--img-user);
+}
+.img-bot {
+  content: var(--img-bot);
+}
+.group {
+  clear: both;
+  padding: 10px 0px;
+}
+.group img {
+  border-radius: 100%;
+  height: var(--icon-size);
+  width: var(--icon-size);
+}
+.group .message {
+  padding: var(--message-padding);
+}
+.group .message:nth-child(2) {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.group .message:last-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.group-user {
+  float: right;
+}
+.group-user img {
+  float: right;
+}
+.group-user .message {
+  background-color: var(--secondary-color);
+  margin: var(--message-margin-y) var(--message-margin-lg) var(--message-margin-y) var(--message-margin-sm);
+}
+.group-bot {
+  float: left;
+}
+.group-bot img {
+  float: left;
+}
+.group-bot .message {
+  background-color: var(--primary-color);
+  margin: var(--message-margin-y) var(--message-margin-sm) var(--message-margin-y) var(--message-margin-lg);
+}
+.message p {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+.text-form {
+  border-top: 1px solid var(--primary-color);
+  display: flex;
+  height: 35px;
+  width: 100%;
+}
+input::-webkit-input-placeholder {
+  color: var(--primary-color) !important;
+}
+.text-input {
+  border-style: none;
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  padding: 0 10px;
+  width: 100%;
+}
+.btn-send {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  display: flex;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+.btn-voice {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  display: flex;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/*
+ * Typing animation reference:
+ * https://codepen.io/mattonit/pen/vLoddq
+ */
+
+#wave {
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+  margin-right: auto;
+}
+#wave .dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background: var(--font-color);
+  animation: wave 1.3s linear infinite;
+}
+#wave .dot:nth-child(2) {
+  animation-delay: -1.1s;
+}
+
+#wave .dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+
+@keyframes wave {
+	0%, 60%, 100% {
+		transform: initial;
+	}
+
+	30% {
+		transform: translateY(-6px);
+	}
+}

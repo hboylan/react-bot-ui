@@ -1,0 +1,18 @@
+@media only screen and (min-width: 400px) {
+
+	:root {
+		--container-right: 100px;
+		--container-width: 300px;
+	}
+}
+
+body {
+  background: var(--secondary-color);
+  height: 100%;
+	margin: 0px;
+}
+
+header {
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+}

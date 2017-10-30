@@ -1,6 +1,6 @@
 {
   "name": "react-bot-ui",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "react-bot-ui React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -16,22 +16,27 @@
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test:watch": "nwb test-react --server",
+    "deploy": "nwb build-react-component && gh-pages -d demo/dist"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "15.x"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "nwb": "0.19.x",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Hugh Boylan <bluehugh2@gmail.com> (http://hughboylan.com)",
+  "homepage": "https://boylan.github.io/react-bot-ui",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/hboylan/react-bot-ui.git",
   "keywords": [
+    "api.ai",
+    "chatbot",
+    "chatbot-ui",
+    "dialogflow",
     "react-component"
   ]
 }
