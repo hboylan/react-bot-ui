@@ -44,13 +44,13 @@ yarn add react-bot-ui
 ## Usage
 
 #### Minimum Dialogflow integration
-```jsp
+```jsx
 <ReactBotUI
 	dialogflow={{accessToken: 'youshallnotpass'}} />
 ```
 
 #### All optional property defaults
-```jsp
+```jsx
 <ReactBotUI
 	dialogflow={null}
 	dialogHeightMax={calculatedToFlex}
@@ -68,3 +68,4 @@ Default styling can be overriden using CSS [variables](https://github.com/hboyla
 - Include default images as Base64
 - Open chat in new window
 - Add non-Dialogflow compatability
+- Add prop-types integration
