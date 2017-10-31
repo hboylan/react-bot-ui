@@ -10,7 +10,7 @@ React component for customizable chatbot UI with Dialogflow integration
 [build]: https://travis-ci.org/user/repo
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[npm]: https://www.npmjs.org/package/react-bot-ui
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
@@ -61,4 +61,10 @@ yarn add react-bot-ui
 
 ## Styling
 
-Default styling can be overriden using CSS variables found [here](https://github.com/hboylan/react-bot-ui/blob/5755d53/css/main.css#L11)
+Default styling can be overriden using CSS [variables](https://github.com/hboylan/react-bot-ui/blob/56dee38/css/main.css#L8)
+
+## TODO
+
+- Include default images as Base64
+- Open chat in new window
+- Add non-Dialogflow compatability
