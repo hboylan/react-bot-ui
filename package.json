@@ -1,6 +1,6 @@
 {
   "name": "react-bot-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component for chatbot UI",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -17,17 +17,20 @@
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
-    "deploy": "nwb build-react-component && gh-pages -d demo/dist"
+    "deploy": "nwb build-react-component && gh-pages -d demo/dist",
+    "publish": "yarn deploy && git add -A && git commit -m $MSG && git push origin master && yarn publish"
+  },
+  "dependencies": {
+    "react-entypo": "^1.3.0"
   },
   "peerDependencies": {
-    "react": "15.x"
+    "react": "16.x"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
     "nwb": "0.19.x",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-entypo": "^1.3.0"
+    "react-dom": "^16.0.0"
   },
   "author": "Hugh Boylan <bluehugh2@gmail.com> (http://hughboylan.com)",
   "homepage": "https://boylan.github.io/react-bot-ui",
