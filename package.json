@@ -1,7 +1,7 @@
 {
   "name": "react-bot-ui",
-  "version": "1.0.0",
-  "description": "react-bot-ui React component",
+  "version": "1.0.1",
+  "description": "React component for chatbot UI",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -26,7 +26,8 @@
     "gh-pages": "^1.0.0",
     "nwb": "0.19.x",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-entypo": "^1.3.0"
   },
   "author": "Hugh Boylan <bluehugh2@gmail.com> (http://hughboylan.com)",
   "homepage": "https://boylan.github.io/react-bot-ui",
@@ -37,6 +38,7 @@
     "chatbot",
     "chatbot-ui",
     "dialogflow",
+    "react",
     "react-component"
   ]
 }

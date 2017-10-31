@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {EntypoPaperPlane, EntypoMic} from 'react-entypo';
 import Audio from './Audio';
 
 class Input extends Component {
@@ -58,12 +59,12 @@ class Input extends Component {
 								type="button"
 								value="Voice"
 								onClick={this.handleListen}>
-					<span className="entypo-mic"></span>
+					<EntypoMic/>
 				</button> */}
 				<button className="btn-send"
 								type="submit"
 								value="Send">
-					<span className="entypo-paper-plane"></span> &nbsp;Send
+					<EntypoPaperPlane/> &nbsp;Send
 				</button>
 			</form>
 		);

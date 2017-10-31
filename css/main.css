@@ -4,10 +4,7 @@
  */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,900);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
+
 :root {
   --primary-color: black;
   --secondary-color: gray;
